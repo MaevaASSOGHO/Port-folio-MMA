@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Redirection immédiate vers l’entrée HashRouter -->
+    <meta http-equiv="refresh" content="0; url=/Port-folio-MMA/#/" />
+    <script>
+      // Si l’utilisateur arrive sur une URL profonde sans #,
+      // on la convertit en hash-route, puis on recharge.
+      (function () {
+        var base = "/Port-folio-MMA";
+        var path = location.pathname.startsWith(base)
+          ? location.pathname.slice(base.length)
+          : location.pathname;
+        var search = location.search || "";
+        var hash = location.hash || "";
+        var target = base + "/#"+ (path.replace(/^\/+/, "")) + search + hash;
+        if (location.href !== location.origin + target) {
+          location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
