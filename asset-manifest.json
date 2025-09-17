@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Port-folio-MMA/static/css/main.b7018c30.css",
-    "main.js": "/Port-folio-MMA/static/js/main.0165c9c0.js",
+    "main.js": "/Port-folio-MMA/static/js/main.a74470a3.js",
     "static/media/portfolio.gif": "/Port-folio-MMA/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/photo-transp.PNG": "/Port-folio-MMA/static/media/photo-transp.4a8a3630ba2ff62df0b5.PNG",
     "static/media/dessin-photo-pro.png": "/Port-folio-MMA/static/media/dessin-photo-pro.547814c19d5284029c58.png",
@@ -77,10 +77,10 @@
     "static/media/talksCardBackAlt.svg": "/Port-folio-MMA/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Port-folio-MMA/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.b7018c30.css.map": "/Port-folio-MMA/static/css/main.b7018c30.css.map",
-    "main.0165c9c0.js.map": "/Port-folio-MMA/static/js/main.0165c9c0.js.map"
+    "main.a74470a3.js.map": "/Port-folio-MMA/static/js/main.a74470a3.js.map"
   },
   "entrypoints": [
     "static/css/main.b7018c30.css",
-    "static/js/main.0165c9c0.js"
+    "static/js/main.a74470a3.js"
   ]
 }
