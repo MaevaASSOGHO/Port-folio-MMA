@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <!-- Redirection immédiate vers l’entrée HashRouter -->
-    <meta http-equiv="refresh" content="0; url=/Port-folio-MMA/#/" />
     <script>
-      // Si l’utilisateur arrive sur une URL profonde sans #,
-      // on la convertit en hash-route, puis on recharge.
-      (function () {
-        var base = "/Port-folio-MMA";
-        var path = location.pathname.startsWith(base)
-          ? location.pathname.slice(base.length)
-          : location.pathname;
-        var search = location.search || "";
-        var hash = location.hash || "";
-        var target = base + "/#"+ (path.replace(/^\/+/, "")) + search + hash;
-        if (location.href !== location.origin + target) {
-          location.replace(target);
-        }
-      })();
-    </script>
+  (function () {
+    var l = window.location;
+    // Recompose en /#/path
+    var path = l.pathname.replace(/^\/Port-folio-MMA/, ''); 
+    var target = l.protocol + '//' + l.host + '/Port-folio-MMA/#' + path + l.search + l.hash;
+    l.replace(target);
+  })();
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Maïva Motombi Assogho's Personal Portfolio Website" property="og:description">
+    <meta name="description" content="/icons/desc.png" property="og:image">
+    <meta name="keywords" content="Maïva, PortFolio, MasterPortfolio, Maïva Motombi Assogho's Portfolio" />
+    <meta name="author" content="Maïva Motombi Assogho" />
+    <meta name="application-name" content="Maïva Motombi Assogho's PortFolio" />
+    <title>404 Not Found</title>
   </head>
   <body></body>
 </html>
