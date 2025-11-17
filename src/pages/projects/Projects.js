@@ -18,7 +18,7 @@ const featuredProjects = [
     screenshot: "oseille_banner.png",
     color: "#431F87",
     site: "https://oseille-app.com/login.php",
-    demoVideo: "/videos/oseille-demo.mp4",
+    demoVideo: process.env.PUBLIC_URL + "/videos/oseille-demo.mp4",
   },
   {
     title: "UrDesire — Boutique e-commerce",
@@ -28,7 +28,7 @@ const featuredProjects = [
     screenshot: "urdesire_banner.png",
     color: "#C50E40",
     site: "https://oseille-app.com/urdesire1/login.php",
-    demoVideo: "/videos/urdesire-demo.mp4",
+    demoVideo: process.env.PUBLIC_URL + "/videos/urdesire-demo.mp4",
   },
   {
     title: "Ma Belle — ChatBot d’aide aux victimes",
@@ -38,7 +38,7 @@ const featuredProjects = [
     screenshot: "mabelle_banner.png",
     color: "#0B5C57",
     site: "https://chat-mabelle.com/",
-    demoVideo: "/videos/mabelle-demo.mp4",
+    demoVideo: process.env.PUBLIC_URL + "/videos/mabelle-demo.mp4",
   },
 ];
 
