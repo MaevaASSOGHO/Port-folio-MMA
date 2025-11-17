@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-// import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard"; // (masqué)
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
-// import PublicationCard from "../../components/publicationsCard/PublicationCard"; // (masqué)
 import { Fade } from "react-reveal";
-import { projectsHeader /*, publicationsHeader, publications */ } from "../../portfolio.js";
-// import ProjectsData from "../../shared/opensource/projects.json"; // (masqué)
+import { projectsHeader } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
@@ -18,10 +15,10 @@ const featuredProjects = [
     description:
       "Budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR), graphiques, authentification. Front React/Tailwind, back Laravel & MySQL, API REST, déploiement O2Switch.",
     stack: ["React/Tailwind", "Laravel", "MySQL", "API REST", "Chart.js"],
-    screenshot: "https://cdn.builder.io/api/v1/image/assets/TEMP/25a9ecb604a40e1a829ee63ce7ec1573089efa88", // <- mets ton image dans src/assets/images/
+    screenshot: "1.png",
     color: "#431F87",
-    demo: "https://oseille-app.com/login.php", // ex: "https://oseilleapp.example.com"
-    repo: null, // ex: "https://github.com/ton-user/oseille-app"
+    site: "https://oseille-app.com/login.php",
+    demoVideo: "/videos/oseille-demo.MOV",
   },
   {
     title: "UrDesire — Boutique e-commerce",
@@ -30,24 +27,49 @@ const featuredProjects = [
     stack: ["PHP", "MySQL", "Bootstrap/Tailwind", "NOWPayments"],
     screenshot: "logo.png",
     color: "#C50E40",
-    demo: "https://oseille-app.com/urdesire1/login.php", // ex: "https://urdesire.example.com"
-    repo: null,
+    site: "https://oseille-app.com/urdesire1/login.php",
+    demoVideo: "/videos/urdesire-demo.MOV",
   },
   {
-    ttitle: "Ma Belle — ChatBot d’aide aux victimes",
-  description:
-    "Chat anonyme et bienveillant pour l’orientation et la sécurité : messages guidés, bouton SOS/alerte, accès rapide à l’appel, répertoire de ressources locales, interface discrète.",
-  stack: ["React/Tailwind", "Laravel API", "LLM/NLP", "WebSocket/Realtime", "MySQL"],
-  screenshot: "1.jpg",   // déjà déposé dans src/assets/images/
-  color: "#0B5C57",         // vert canard assorti à la capture
-    demo: "https://chat-mabelle.com/",
-    repo: null,
+    title: "Ma Belle — ChatBot d’aide aux victimes",
+    description:
+      "Chat anonyme et bienveillant pour l’orientation et la sécurité : messages guidés, bouton SOS/alerte, accès rapide à l’appel, répertoire de ressources locales, interface discrète.",
+    stack: ["React/Tailwind", "Laravel API", "LLM/NLP", "WebSocket/Realtime", "MySQL"],
+    screenshot: "1.jpg",
+    color: "#0B5C57",
+    site: "https://chat-mabelle.com/",
+    demoVideo: "/videos/mabelle-demo.MOV",
   },
 ];
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeDescription: null, // projet dont on affiche la description
+      activeVideo: null,       // projet dont on affiche la vidéo
+    };
+  }
+
+  openDescription = (project) => {
+    this.setState({ activeDescription: project });
+  };
+
+  closeDescription = () => {
+    this.setState({ activeDescription: null });
+  };
+
+  openVideo = (project) => {
+    this.setState({ activeVideo: project });
+  };
+
+  closeVideo = () => {
+    this.setState({ activeVideo: null });
+  };
+
   render() {
     const theme = this.props.theme;
+    const { activeDescription, activeVideo } = this.state;
 
     return (
       <div className="projects-main">
@@ -78,13 +100,20 @@ class Projects extends Component {
           </Fade>
         </div>
 
-        {/* ======= Projets mis en avant (avec screenshot + bandeau couleur) ======= */}
+        {/* ======= Projets mis en avant ======= */}
         <div className="basic-projects">
           <Fade bottom duration={1200} distance="20px">
             <div className="featured-grid">
               {featuredProjects.map((p) => (
-                <div className="featured-card" key={p.title} style={{ borderTopColor: p.color }}>
-                  <div className="featured-media" style={{ backgroundColor: p.color }}>
+                <div
+                  className="featured-card"
+                  key={p.title}
+                  style={{ borderTopColor: p.color }}
+                >
+                  <div
+                    className="featured-media"
+                    style={{ backgroundColor: p.color }}
+                  >
                     {p.screenshot && (
                       <img
                         src={require(`../../assets/images/${p.screenshot}`)}
@@ -94,26 +123,56 @@ class Projects extends Component {
                   </div>
 
                   <div className="featured-content">
-                    <h3 className="featured-title" style={{ color: theme.text }}>
+                    <h3
+                      className="featured-title"
+                      style={{ color: theme.text }}
+                    >
                       {p.title}
                     </h3>
-                    <p className="featured-desc" style={{ color: theme.secondaryText }}>
-                      {p.description}
+
+                    {/* On n'affiche qu'un extrait, la description complète est dans la modale */}
+                    <p
+                      className="featured-desc"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {p.description.length > 140
+                        ? p.description.slice(0, 140) + "..."
+                        : p.description}
                     </p>
 
                     <div className="featured-tags">
                       {p.stack.map((tech) => (
-                        <span className="tag" key={tech}>{tech}</span>
+                        <span className="tag" key={tech}>
+                          {tech}
+                        </span>
                       ))}
                     </div>
 
                     <div className="featured-actions">
-                      {p.demo && (
-                        <Button text="Démo" newTab={true} href={p.demo} theme={theme} />
+                      {p.site && (
+                        <Button
+                          text="Visiter le site"
+                          newTab={true}
+                          href={p.site}
+                          theme={theme}
+                        />
                       )}
-                      {p.repo && (
-                        <Button text="Code" newTab={true} href={p.repo} theme={theme} />
+
+                      {p.demoVideo && (
+                        <button
+                          className="featured-btn"
+                          onClick={() => this.openVideo(p)}
+                        >
+                          Voir la démo
+                        </button>
                       )}
+
+                      <button
+                        className="featured-btn secondary"
+                        onClick={() => this.openDescription(p)}
+                      >
+                        Description
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -122,51 +181,81 @@ class Projects extends Component {
           </Fade>
         </div>
 
-        {/* ======= GitHub & Publications (COMMENTÉS pour masquer) ======= */}
-        {/*
-        <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => (
-            <GithubRepoCard key={repo.id || repo.name} repo={repo} theme={theme} />
-          ))}
-        </div>
+        {/* ======= MODALE DESCRIPTION ======= */}
+        {activeDescription && (
+          <div className="overlay">
+            <div className="overlay-backdrop" onClick={this.closeDescription} />
+            <div className="overlay-content">
+              <button
+                className="overlay-close"
+                onClick={this.closeDescription}
+                aria-label="Fermer la description"
+              >
+                ×
+              </button>
+              <h3 className="overlay-title">{activeDescription.title}</h3>
+              <p className="overlay-text">{activeDescription.description}</p>
 
-        <Button
-          text={"Tous mes projets"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
-
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
+              <div className="overlay-tags">
+                {activeDescription.stack.map((tech) => (
+                  <span className="tag" key={tech}>
+                    {tech}
+                  </span>
+                ))}
               </div>
-            </Fade>
-          </div>
-        ) : null}
 
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => (
-            <PublicationCard key={pub.id} pub={pub} theme={theme} />
-          ))}
-        </div>
-        */}
+              {activeDescription.site && (
+                <div className="overlay-actions">
+                  <a
+                    href={activeDescription.site}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="overlay-link-btn"
+                  >
+                    Visiter le site
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* ======= MODALE VIDÉO ======= */}
+        {activeVideo && (
+          <div className="overlay">
+            <div className="overlay-backdrop" onClick={this.closeVideo} />
+            <div className="overlay-content overlay-video">
+              <button
+                className="overlay-close"
+                onClick={this.closeVideo}
+                aria-label="Fermer la vidéo"
+              >
+                ×
+              </button>
+
+              <h3 className="overlay-title">{activeVideo.title}</h3>
+
+              <video
+                className="overlay-video-player"
+                src={activeVideo.demoVideo}
+                controls
+              />
+
+              <div className="overlay-actions">
+                {activeVideo.site && (
+                  <a
+                    href={activeVideo.site}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="overlay-link-btn"
+                  >
+                    Aller sur le site
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
