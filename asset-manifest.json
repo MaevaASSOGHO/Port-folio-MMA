@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Port-folio-MMA/static/css/main.5507ae38.css",
-    "main.js": "/Port-folio-MMA/static/js/main.6eb9a4a0.js",
+    "main.css": "/Port-folio-MMA/static/css/main.91533f6b.css",
+    "main.js": "/Port-folio-MMA/static/js/main.9a1f10de.js",
     "static/media/portfolio.gif": "/Port-folio-MMA/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/photo-transp.PNG": "/Port-folio-MMA/static/media/photo-transp.4a8a3630ba2ff62df0b5.PNG",
     "static/media/dessin-photo-pro.png": "/Port-folio-MMA/static/media/dessin-photo-pro.547814c19d5284029c58.png",
@@ -18,6 +18,7 @@
     "static/media/IMG_0580.jpg": "/Port-folio-MMA/static/media/IMG_0580.5a39a585163c4e44ce53.jpg",
     "static/media/Montserrat-Regular.ttf": "/Port-folio-MMA/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/oseille.PNG": "/Port-folio-MMA/static/media/oseille.3e1fc122bc5ee41f1972.PNG",
+    "static/media/urdesire_banner.png": "/Port-folio-MMA/static/media/urdesire_banner.7e284e859faa1e15d791.png",
     "static/media/iu_logo.png": "/Port-folio-MMA/static/media/iu_logo.5f44628376f5171bea0f.png",
     "static/media/dsc_logo.png": "/Port-folio-MMA/static/media/dsc_logo.fdf993910e3f48d0cf30.png",
     "static/media/fa-solid-900.eot": "/Port-folio-MMA/static/media/fa-solid-900.d93bcbbb0fbfad39d905.eot",
@@ -25,6 +26,7 @@
     "static/media/animated_ashutosh.png": "/Port-folio-MMA/static/media/animated_ashutosh.a6571aa6386520448027.png",
     "static/media/photo-pro.png": "/Port-folio-MMA/static/media/photo-pro.29732afdadc60b4eb6fb.png",
     "static/media/fa-regular-400.svg": "/Port-folio-MMA/static/media/fa-regular-400.4e8f9fa44f7ec7479c39.svg",
+    "static/media/mabelle_banner.png": "/Port-folio-MMA/static/media/mabelle_banner.186d9ca35238c9bbc144.png",
     "static/media/fa-brands-400.eot": "/Port-folio-MMA/static/media/fa-brands-400.b09f783b99c88d6989f7.eot",
     "static/media/fa-brands-400.ttf": "/Port-folio-MMA/static/media/fa-brands-400.ec7723ea62ad74c14959.ttf",
     "static/media/GoogleSans-Italic.ttf": "/Port-folio-MMA/static/media/GoogleSans-Italic.40bb50bd202405745006.ttf",
@@ -48,6 +50,7 @@
     "static/media/iiitk_logo.png": "/Port-folio-MMA/static/media/iiitk_logo.170d558551a09a7d1620.png",
     "static/media/logo-planb.PNG": "/Port-folio-MMA/static/media/logo-planb.63101443bf728c3be9eb.PNG",
     "static/media/intel_logo.jpg": "/Port-folio-MMA/static/media/intel_logo.d7577f35a3dac4e5636d.jpg",
+    "static/media/oseille_banner.png": "/Port-folio-MMA/static/media/oseille_banner.c51abeb82285f04b2b7c.png",
     "static/media/ui_ux_design.svg": "/Port-folio-MMA/static/media/ui_ux_design.42a2cdaf132097cc499e.svg",
     "static/media/6e721bac-df3e-4727-ae4a-a7affda55527.jpg": "/Port-folio-MMA/static/media/6e721bac-df3e-4727-ae4a-a7affda55527.c7c43730ee6902b4c357.jpg",
     "static/media/1.jpg": "/Port-folio-MMA/static/media/1.775200024119a960dcf3.jpg",
@@ -83,11 +86,11 @@
     "static/media/googleAssistant.svg": "/Port-folio-MMA/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Port-folio-MMA/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Port-folio-MMA/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.5507ae38.css.map": "/Port-folio-MMA/static/css/main.5507ae38.css.map",
-    "main.6eb9a4a0.js.map": "/Port-folio-MMA/static/js/main.6eb9a4a0.js.map"
+    "main.91533f6b.css.map": "/Port-folio-MMA/static/css/main.91533f6b.css.map",
+    "main.9a1f10de.js.map": "/Port-folio-MMA/static/js/main.9a1f10de.js.map"
   },
   "entrypoints": [
-    "static/css/main.5507ae38.css",
-    "static/js/main.6eb9a4a0.js"
+    "static/css/main.91533f6b.css",
+    "static/js/main.9a1f10de.js"
   ]
 }
