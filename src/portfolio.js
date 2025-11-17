@@ -23,12 +23,12 @@ const greeting = {
   logo_name: "MaïvaMOTOMBIASSOGHO",
   // nickname: "layman_brother",
   subTitle:
-    "Profil hybride entre art, digital et technologie, en reconversion vers le développement web. Mon objectif : créer des expériences utilisateurs à la fois efficaces et inspirantes.",
+    "Profil hybride entre art, digital et technologie, mon objectif principal est de créer des expériences utilisateurs à la fois efficaces et inspirantes.",
   // resumeLink:
   //   "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  resumeLink: "https://drive.google.com/file/d/1bHA4KQLNkZiXFcB5R9iF-Pezp-5Jy3Gn/view",
-  portfolio_repository: "https://drive.google.com/file/d/1bHA4KQLNkZiXFcB5R9iF-Pezp-5Jy3Gn/view?usp=drivesdk",
-  githubProfile: "https://github.com/ashutosh1919",
+  resumeLink: "https://flowcv.com/resume/u28bgrr1o2kd",
+  portfolio_repository: "https://flowcv.com/resume/u28bgrr1o2kd",
+  githubProfile: "https://github.com/MaevaASSOGHO",
 };
 
 const socialMediaLinks = [
@@ -569,7 +569,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "dessin.png",
+    profile_image_path: "IMG_0581.PNG",
     description:
       "J’accompagne vos projets d'applications web et mobile, des interfaces React soignées en passant par des API/CRUD Laravel aux bases MySQL, j’assure le déploiement et la documentation. J’adore transformer une idée en expérience web claire, rapide et belle — du portfolio au MVP prêt en prod.",
   },

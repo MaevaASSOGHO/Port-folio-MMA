@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import myImage from "../../assets/images/photo-pro.png";
+import myImage from "../../assets/images/photo-transp.PNG";
 class FeelingProud extends Component {
   render() {
     return (

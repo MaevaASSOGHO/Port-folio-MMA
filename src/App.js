@@ -1,4 +1,5 @@
 import React from "react";
+import { HashRouter as Router } from "react-router-dom";
 import "./App.css";
 import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
@@ -10,12 +11,11 @@ function App() {
     <ThemeProvider theme={chosenTheme}>
       <>
         <GlobalStyles />
-        <div>
+        <Router>
           <Main theme={chosenTheme} />
-        </div>
+        </Router>
       </>
     </ThemeProvider>
   );
 }
-
 export default App;

@@ -18,7 +18,7 @@ const featuredProjects = [
     description:
       "Budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR), graphiques, authentification. Front React/Tailwind, back Laravel & MySQL, API REST, déploiement O2Switch.",
     stack: ["React/Tailwind", "Laravel", "MySQL", "API REST", "Chart.js"],
-    screenshot: "oseille.PNG", // <- mets ton image dans src/assets/images/
+    screenshot: "1.png", // <- mets ton image dans src/assets/images/
     color: "#431F87",
     demo: "https://oseille-app.com/login.php", // ex: "https://oseilleapp.example.com"
     repo: null, // ex: "https://github.com/ton-user/oseille-app"
@@ -28,7 +28,7 @@ const featuredProjects = [
     description:
       "E-commerce anonyme (pseudo & token), panier, wishlist, catégories, suivi de commande, paiements crypto (NOWPayments). PHP/MySQL + Bootstrap/Tailwind.",
     stack: ["PHP", "MySQL", "Bootstrap/Tailwind", "NOWPayments"],
-    screenshot: "urdesire.PNG",
+    screenshot: "logo.png",
     color: "#C50E40",
     demo: "https://oseille-app.com/urdesire1/login.php", // ex: "https://urdesire.example.com"
     repo: null,
@@ -38,7 +38,7 @@ const featuredProjects = [
   description:
     "Chat anonyme et bienveillant pour l’orientation et la sécurité : messages guidés, bouton SOS/alerte, accès rapide à l’appel, répertoire de ressources locales, interface discrète.",
   stack: ["React/Tailwind", "Laravel API", "LLM/NLP", "WebSocket/Realtime", "MySQL"],
-  screenshot: "chat.jpg",   // déjà déposé dans src/assets/images/
+  screenshot: "1.jpg",   // déjà déposé dans src/assets/images/
   color: "#0B5C57",         // vert canard assorti à la capture
     demo: "https://chat-mabelle.com/",
     repo: null,
