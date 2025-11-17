@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Port-folio-MMA/static/css/main.3583f633.css",
-    "main.js": "/Port-folio-MMA/static/js/main.cc712736.js",
+    "main.css": "/Port-folio-MMA/static/css/main.5507ae38.css",
+    "main.js": "/Port-folio-MMA/static/js/main.6eb9a4a0.js",
     "static/media/portfolio.gif": "/Port-folio-MMA/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/photo-transp.PNG": "/Port-folio-MMA/static/media/photo-transp.4a8a3630ba2ff62df0b5.PNG",
     "static/media/dessin-photo-pro.png": "/Port-folio-MMA/static/media/dessin-photo-pro.547814c19d5284029c58.png",
@@ -83,11 +83,11 @@
     "static/media/googleAssistant.svg": "/Port-folio-MMA/static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "/Port-folio-MMA/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Port-folio-MMA/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.3583f633.css.map": "/Port-folio-MMA/static/css/main.3583f633.css.map",
-    "main.cc712736.js.map": "/Port-folio-MMA/static/js/main.cc712736.js.map"
+    "main.5507ae38.css.map": "/Port-folio-MMA/static/css/main.5507ae38.css.map",
+    "main.6eb9a4a0.js.map": "/Port-folio-MMA/static/js/main.6eb9a4a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3583f633.css",
-    "static/js/main.cc712736.js"
+    "static/css/main.5507ae38.css",
+    "static/js/main.6eb9a4a0.js"
   ]
 }
