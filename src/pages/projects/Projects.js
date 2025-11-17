@@ -18,7 +18,7 @@ const featuredProjects = [
     screenshot: "1.png",
     color: "#431F87",
     site: "https://oseille-app.com/login.php",
-    demoVideo: "/videos/oseille-demo.MOV",
+    demoVideo: "/videos/oseille-demo.mp4",
   },
   {
     title: "UrDesire — Boutique e-commerce",
@@ -28,7 +28,7 @@ const featuredProjects = [
     screenshot: "logo.png",
     color: "#C50E40",
     site: "https://oseille-app.com/urdesire1/login.php",
-    demoVideo: "/videos/urdesire-demo.MOV",
+    demoVideo: "/videos/urdesire-demo.mp4",
   },
   {
     title: "Ma Belle — ChatBot d’aide aux victimes",
@@ -38,7 +38,7 @@ const featuredProjects = [
     screenshot: "1.jpg",
     color: "#0B5C57",
     site: "https://chat-mabelle.com/",
-    demoVideo: "/videos/mabelle-demo.MOV",
+    demoVideo: "/videos/mabelle-demo.mp4",
   },
 ];
 
@@ -150,12 +150,14 @@ class Projects extends Component {
 
                     <div className="featured-actions">
                       {p.site && (
-                        <Button
-                          text="Visiter le site"
-                          newTab={true}
+                        <a
                           href={p.site}
-                          theme={theme}
-                        />
+                          target="_blank"
+                          rel="noreferrer"
+                          className="featured-btn primary"
+                        >
+                          Visiter le site
+                        </a>
                       )}
 
                       {p.demoVideo && (
@@ -174,6 +176,7 @@ class Projects extends Component {
                         Description
                       </button>
                     </div>
+
                   </div>
                 </div>
               ))}

@@ -1,9 +1,10 @@
-/* Grille responsive */
+/* Grille verticale : 1 carte par ligne */
 .featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
+
 
 /* Carte compacte avec bandeau couleur */
 .featured-card {
@@ -73,33 +74,50 @@
 }
 
 /* Actions */
+/* Boutons dans la carte */
 .featured-actions {
-  display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; margin-top: auto;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
-/* Boutons custom sur les cartes (Démo / Description) */
+/* Style commun */
 .featured-btn {
-  border: none;
   border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #000000;
+  padding: 8px 18px;
+  font-size: 0.9rem;
   font-family: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease, color 0.15s ease;
 }
 
+/* Bouton principal (Visiter le site) */
+.featured-btn.primary {
+  background-color: #001f5b; /* adapte à ta couleur principale */
+  color: #ffffff;
+}
+
+/* Bouton secondaire (Voir la démo) */
+.featured-btn {
+  background-color: #ffffff;
+  color: #001f5b;
+}
+
+/* Bouton tertiaire (Description) */
 .featured-btn.secondary {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: inherit;
+  color: #001f5b;
+  border: 1px solid rgba(0, 31, 91, 0.4);
 }
 
 .featured-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+
 
 /* ======= MODALES (overlay) ======= */
 
