@@ -18,7 +18,7 @@ const featuredProjects = [
     description:
       "Budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR), graphiques, authentification. Front React/Tailwind, back Laravel & MySQL, API REST, déploiement O2Switch.",
     stack: ["React/Tailwind", "Laravel", "MySQL", "API REST", "Chart.js"],
-    screenshot: "1.png", // <- mets ton image dans src/assets/images/
+    screenshot: "https://cdn.builder.io/api/v1/image/assets/TEMP/25a9ecb604a40e1a829ee63ce7ec1573089efa88", // <- mets ton image dans src/assets/images/
     color: "#431F87",
     demo: "https://oseille-app.com/login.php", // ex: "https://oseilleapp.example.com"
     repo: null, // ex: "https://github.com/ton-user/oseille-app"
