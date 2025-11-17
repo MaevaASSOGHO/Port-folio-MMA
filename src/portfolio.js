@@ -529,7 +529,7 @@ const experience = {
 const projectsHeader = {
   title: "Projets",
   description:
-    "Je conçois des applications web et mobiles qui mêlent exigence créative et rigueur technique. Priorité : expérience fluide, performance et fiabilité. Ma réalisation phare : un ChatBot d’aide aux victimes de violences (conversation anonyme, ressources, SOS).",
+    "Je conçois des applications web et mobiles qui mêlent exigence créative et rigueur technique. Priorité : expérience fluide, performance et fiabilité.",
   avatar_image_path: "projects_image.svg",
 };
 

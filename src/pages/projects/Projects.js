@@ -13,9 +13,9 @@ const featuredProjects = [
   {
     title: "Oseille App — Gestion financière",
     description:
-      "Budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR), graphiques, authentification. Front React/Tailwind, back Laravel & MySQL, API REST, déploiement O2Switch.",
+      "Application pour gérer vos budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR) avec graphiques & authentification.",
     stack: ["React/Tailwind", "Laravel", "MySQL", "API REST", "Chart.js"],
-    screenshot: "1.png",
+    screenshot: "oseille_banner.png",
     color: "#431F87",
     site: "https://oseille-app.com/login.php",
     demoVideo: "/videos/oseille-demo.mp4",
@@ -23,9 +23,9 @@ const featuredProjects = [
   {
     title: "UrDesire — Boutique e-commerce",
     description:
-      "E-commerce anonyme (pseudo & token), panier, wishlist, catégories, suivi de commande, paiements crypto (NOWPayments). PHP/MySQL + Bootstrap/Tailwind.",
+      "E-commerce anonyme (pseudo & token) avec panier, wishlist, catégories, suivi de commande, suivi de livraison avec chats privés et paiements en ligne.",
     stack: ["PHP", "MySQL", "Bootstrap/Tailwind", "NOWPayments"],
-    screenshot: "logo.png",
+    screenshot: "urdesire_banner.png",
     color: "#C50E40",
     site: "https://oseille-app.com/urdesire1/login.php",
     demoVideo: "/videos/urdesire-demo.mp4",
@@ -35,7 +35,7 @@ const featuredProjects = [
     description:
       "Chat anonyme et bienveillant pour l’orientation et la sécurité : messages guidés, bouton SOS/alerte, accès rapide à l’appel, répertoire de ressources locales, interface discrète.",
     stack: ["React/Tailwind", "Laravel API", "LLM/NLP", "WebSocket/Realtime", "MySQL"],
-    screenshot: "1.jpg",
+    screenshot: "mabelle_banner.png",
     color: "#0B5C57",
     site: "https://chat-mabelle.com/",
     demoVideo: "/videos/mabelle-demo.mp4",
@@ -79,9 +79,9 @@ class Projects extends Component {
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
+              {/* <div className="projects-heading-img-div">
                 <ProjectsImg theme={theme} />
-              </div>
+              </div> */}
               <div className="projects-heading-text-div">
                 <h1
                   className="projects-heading-text"
