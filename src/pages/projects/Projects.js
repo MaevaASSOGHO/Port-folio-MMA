@@ -11,34 +11,34 @@ import ProjectsImg from "./ProjectsImg";
 /** ======= PROJETS MIS EN AVANT (éditables) ======= */
 const featuredProjects = [
   {
-    title: "Oseille App — Gestion financière",
+    title: "DOHI — Plateforme de signalement d’arnaques",
     description:
-      "Application pour gérer vos budgets, revenus/dépenses, épargne & tontines, multi-devises (XOF ⇄ USD ⇄ EUR) avec graphiques & authentification.",
-    stack: ["React/Tailwind", "Laravel", "MySQL", "API REST", "Chart.js"],
-    screenshot: "oseille_banner.png",
-    color: "#431F87",
-    site: "https://oseille-app.com/login.php",
-    demoVideo: process.env.PUBLIC_URL + "/videos/oseille-demo.mp4",
+      "Plateforme communautaire de signalement, agrégation et validation d’arnaques (services, boutiques, profils, sites, numéros, etc.) avec vérification d’identité et anonymat des commentaires.",
+    stack: ["React", "Tailwind", "Laravel", "PostgreSQL", "Sanctum"],
+    screenshot: "Dohi-logo2.png",
+    color: "#7C3AED",
+    site: "https://dohi.vercel.app/",
+    // demoVideo: process.env.PUBLIC_URL + "/videos/dohi-demo.mp4",
   },
   {
-    title: "UrDesire — Boutique e-commerce",
+    title: "AKIBA BTP — Entreprise de construction",
     description:
-      "E-commerce anonyme (pseudo & token) avec panier, wishlist, catégories, suivi de commande, suivi de livraison avec chats privés et paiements en ligne.",
-    stack: ["PHP", "MySQL", "Bootstrap/Tailwind", "NOWPayments"],
-    screenshot: "urdesire_banner.png",
-    color: "#C50E40",
-    site: "https://oseille-app.com/urdesire1/login.php",
-    demoVideo: process.env.PUBLIC_URL + "/videos/urdesire-demo.mp4",
+      "Site vitrine pour entreprise de BTP avec hero vidéo plein écran, présentation entreprise, services en cartes interactives, statistiques animées, et bandeau devis.",
+    stack: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    screenshot: "btp.png",
+    color: "#C8A96E",
+    site: "https://btp-gabon.vercel.app/",
+    // demoVideo: process.env.PUBLIC_URL + "/videos/urdesire-demo.mp4",
   },
   {
-    title: "Ma Belle — ChatBot d’aide aux victimes",
+    title: "DIM VOYAGE — Site de tourisme ",
     description:
-      "Chat anonyme et bienveillant pour l’orientation et la sécurité : messages guidés, bouton SOS/alerte, accès rapide à l’appel, répertoire de ressources locales, interface discrète.",
-    stack: ["React/Tailwind", "Laravel API", "LLM/NLP", "WebSocket/Realtime", "MySQL"],
-    screenshot: "mabelle_banner.png",
-    color: "#0B5C57",
-    site: "https://chat-mabelle.com/",
-    demoVideo: process.env.PUBLIC_URL + "/videos/mabelle-demo.mp4",
+      " Site vitrine pour une agence de voyage en Côte d’Ivoire, avec réservation en ligne, paiement sécurisé et gestion des offres et des clients.",
+    stack: ["React", "Tailwind", "Next.js", "TypeScript", "WebSocket/Realtime", "MongoDB"],
+    screenshot: "dim.png",
+    color: "#007BFF",
+    site: "https://dim-voyage.vercel.app/",
+    // demoVideo: process.env.PUBLIC_URL + "/videos/mabelle-demo.mp4",
   },
 ];
 
@@ -160,14 +160,14 @@ class Projects extends Component {
                         </a>
                       )}
 
-                      {p.demoVideo && (
+                      {/* {p.demoVideo && (
                         <button
                           className="featured-btn"
                           onClick={() => this.openVideo(p)}
                         >
                           Voir la démo
                         </button>
-                      )}
+                      )} */}
 
                       <button
                         className="featured-btn secondary"
