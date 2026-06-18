@@ -1,13 +1,17 @@
 {
   "files": {
     "main.css": "/Port-folio-MMA/static/css/main.91533f6b.css",
-    "main.js": "/Port-folio-MMA/static/js/main.55c50e37.js",
+    "main.js": "/Port-folio-MMA/static/js/main.beb57490.js",
     "static/media/portfolio.gif": "/Port-folio-MMA/static/media/portfolio.ed6c89f1485f23014ebd.gif",
+    "static/media/btp.png": "/Port-folio-MMA/static/media/btp.5025540492a659ff1c6f.png",
     "static/media/photo-transp.PNG": "/Port-folio-MMA/static/media/photo-transp.4a8a3630ba2ff62df0b5.PNG",
+    "static/media/dim.png": "/Port-folio-MMA/static/media/dim.16f7ffc25d70a1862bbb.png",
     "static/media/dessin-photo-pro.png": "/Port-folio-MMA/static/media/dessin-photo-pro.547814c19d5284029c58.png",
     "static/media/logo.png": "/Port-folio-MMA/static/media/logo.bfd21e2b3cfaaaddb98b.png",
     "static/media/IMG_0580.PNG": "/Port-folio-MMA/static/media/IMG_0580.5e49488cdfaa926e386e.PNG",
+    "static/media/jfk.png": "/Port-folio-MMA/static/media/jfk.bd654f1670e007e926db.png",
     "static/media/urdesire.PNG": "/Port-folio-MMA/static/media/urdesire.904e784c4fd270df10f4.PNG",
+    "static/media/dohi.png": "/Port-folio-MMA/static/media/dohi.312faff7ca66914af093.png",
     "static/media/dessin.png": "/Port-folio-MMA/static/media/dessin.7f6b3d30723f86ba7e72.png",
     "static/media/fa-solid-900.svg": "/Port-folio-MMA/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/icon-192 (1).png": "/Port-folio-MMA/static/media/icon-192 (1).113b0d607cd94b72090a.png",
@@ -87,10 +91,10 @@
     "static/media/talksCardBackAlt.svg": "/Port-folio-MMA/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/Port-folio-MMA/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.91533f6b.css.map": "/Port-folio-MMA/static/css/main.91533f6b.css.map",
-    "main.55c50e37.js.map": "/Port-folio-MMA/static/js/main.55c50e37.js.map"
+    "main.beb57490.js.map": "/Port-folio-MMA/static/js/main.beb57490.js.map"
   },
   "entrypoints": [
     "static/css/main.91533f6b.css",
-    "static/js/main.55c50e37.js"
+    "static/js/main.beb57490.js"
   ]
 }
